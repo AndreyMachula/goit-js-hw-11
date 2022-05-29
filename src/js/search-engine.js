@@ -90,17 +90,12 @@ function onLoadMore() {
   });  
 }
   
-
+function onFetchInfo() {
+   Notify.info("We're sorry, but you've reached the end of search results.");
+} 
   
-  function onFetchInfo() {
-    Notify.info("We're sorry, but you've reached the end of search results.");
-  } 
-  
-  let lightbox = new SimpleLightbox('.photo-card a', {
-    captions: true,
-    captionsData: 'alt',
-    captionDelay: 250,
-  }).refresh('show.simpleLightbox');
-  
-    
-    
+let lightbox = new SimpleLightbox('.photo-card a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+}).refresh('show.simpleLightbox');  
